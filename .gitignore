@@ -1,0 +1,16 @@
+# Python venv and caches
+.venv/
+**/__pycache__/
+*.pyc
+
+# Django local files
+app-server/.env
+app-server/db.sqlite3
+
+# Node artifacts
+app/node_modules/
+app/dist/
+
+# OS/editor
+.DS_Store
+Thumbs.db
