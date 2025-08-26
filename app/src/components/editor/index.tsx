@@ -83,7 +83,7 @@ const Editor: React.FC<Props> = (props) => {
       new ItalicExtension(),
       new UnderlineExtension(),
       new HeadingExtension({ levels: [1, 2, 3] }),
-      new FontSizeExtension({ defaultSize: "16", unit: "px" }),
+      new FontSizeExtension({ defaultSize: "30", unit: "px" }),
       new OrderedListExtension(),
       new ListItemExtension(),
       new BulletListExtension({ enableSpine: true }),
@@ -104,18 +104,42 @@ const Editor: React.FC<Props> = (props) => {
   });
 
   return (
-    <div className="mt-2 mb-4">
+    <div className="w-full">
       <Remirror
         manager={manager}
         initialContent={state}
-        placeholder="Start typing...Please be respectful :)"
+        placeholder="✨ Start typing to collaborate in real-time..."
         classNames={[
-          "p-4 focus:outline-none h-96 overflow-y-auto scrollbar-hide prose lg:prose-xl prose-p:m-0",
+          "remirror-editor p-6 focus:outline-none min-h-96 overflow-y-auto custom-scrollbar prose lg:prose-xl prose-p:m-0 transition-smooth",
         ]}
       >
-        <div className="rounded-md border">
-          <EditorComponent />
-          <OnChangeJSON onChange={onChange as any} />
+        <div className="rounded-xl border-2 border-blue-100 focus-within:border-blue-300 transition-colors duration-200 bg-gradient-to-br from-white to-blue-50/30">
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 px-4 py-2 border-b border-blue-100 rounded-t-xl">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                <span className="text-sm font-medium text-blue-700">Rich Text Editor</span>
+              </div>
+              <div className="flex items-center space-x-3 text-xs text-gray-500">
+                <span className="flex items-center space-x-1">
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path>
+                  </svg>
+                  <span>Formatting</span>
+                </span>
+                <span className="flex items-center space-x-1">
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z" clipRule="evenodd"></path>
+                  </svg>
+                  <span>Auto-save</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="p-1">
+            <EditorComponent />
+            <OnChangeJSON onChange={onChange as any} />
+          </div>
         </div>
       </Remirror>
     </div>

@@ -5,3 +5,56 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* Enhanced cursor visibility and editor styling */
+.remirror-editor {
+  caret-color: #3b82f6 !important;
+}
+
+.remirror-editor .ProseMirror {
+  caret-color: #3b82f6 !important;
+}
+
+/* Make collaboration cursors more visible */
+.collaboration-cursor {
+  border-left: 2px solid;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0.3; }
+}
+
+/* Enhanced selection styling */
+.ProseMirror ::selection {
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+.ProseMirror ::-moz-selection {
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+/* Smooth transitions for interactive elements */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom scrollbar for editor */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
