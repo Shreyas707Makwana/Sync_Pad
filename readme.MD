@@ -41,7 +41,7 @@ Sync Pad enables multiple users to edit documents simultaneously with real-time 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/sync-pad.git
+git clone https://github.com/Shreyas707Makwana/sync-pad.git
 cd sync-pad
 ```
 
@@ -92,37 +92,6 @@ Visit `http://localhost:5173` in your browser and start collaborating!
 3. **Invite Others** - Share the URL with collaborators
 4. **Real-time Magic** - Watch as changes appear instantly across all connected users
 
-## 🎯 Roadmap
-
-- [ ] **Multiple Documents** - Support for creating and managing multiple documents
-- [ ] **User Authentication** - Secure user accounts and document permissions
-- [ ] **Document History** - Version control and change tracking
-- [ ] **Export Options** - Export to PDF, Word, Markdown formats
-- [ ] **Comments & Suggestions** - Collaborative review features
-- [ ] **WebRTC Integration** - Peer-to-peer communication for reduced latency
-- [ ] **Mobile App** - Native mobile applications
-- [ ] **Offline Support** - Work offline with automatic sync when reconnected
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. **Fork the repository**
-2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
-3. **Commit your changes** (`git commit -m 'Add amazing feature'`)
-4. **Push to the branch** (`git push origin feature/amazing-feature`)
-5. **Open a Pull Request**
-
-### Development Guidelines
-- Follow existing code style and conventions
-- Add tests for new features
-- Update documentation as needed
-- Ensure all tests pass before submitting
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - **Yjs** - For the amazing CRDT implementation
@@ -136,4 +105,4 @@ For questions, suggestions, or support, please open an issue on GitHub.
 
 ---
 
-**Built with ❤️ for seamless collaboration**
+**Built with passion**
