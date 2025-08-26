@@ -2,9 +2,9 @@
 
 **Real-time Collaborative Text Editor** - Experience seamless collaboration with live editing, instant synchronization, and beautiful rich-text formatting.
 
-Sync Pad enables multiple users to edit documents simultaneously with real-time updates, conflict-free synchronization using CRDTs, and live cursor tracking. Built with modern web technologies for optimal performance and user experience.
-
 ![Demo](demo.gif)
+
+Sync Pad enables multiple users to edit documents simultaneously with real-time updates, conflict-free synchronization using CRDTs, and live cursor tracking. Built with modern web technologies for optimal performance and user experience.
 
 ## ✨ Key Features
 
